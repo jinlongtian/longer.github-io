@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>通用下载</title>
+     
+    <!-- 禁止访问源代码 -->
+    <script type="text/javascript">
+      window.onload = function() {
+          document.onkeydown = function() {
+             var e = window.event || arguments[0];
+             //屏蔽F12
+        if(e.keyCode == 123) {
+        console.log('本网站欢迎您！');
+            return false;
+         //屏蔽Ctrl+Shift+I
+         }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
+          console.log('当前提示，本网站禁止审查元素');
+            return false;
+          //屏蔽Ctrl+U(火狐下查看网页源代码快捷键)
+          }else if((e.ctrlKey) && (e.keyCode == 85)){
+          console.log('本网站禁止使用审查元素')
+          return false;
+                  //屏蔽Shift+F10
+                  }else if((e.shiftKey) && (e.keyCode == 121)){
+                      console.log('本网站禁止审查元素！');
+          return false;
+                  }else if(event.ctrlKey  &&  window.event.keyCode==83 ){ 
+                      console.log('本网站禁止保存文件！');
+                      return false;
+                  }
+                  };
+                  //屏蔽右键单击
+          if (window.Event)
+          document.captureEvents(Event.MOUSEUP);
+          function nocontextmenu()
+          {
+          event.cancelBubble = true
+          event.returnValue = false;
+          return false;
+          }
+          function norightclick(e)
+          {if (window.Event)
+          {
+          if (e.which == 2 || e.which == 3)
+          return false;
+          }
+          else
+          if (event.button == 2 || event.button == 3)
+          {
+          event.cancelBubble = true
+          event.returnValue = false;
+          return false;
+          }
+          }
+          document.oncontextmenu = nocontextmenu; // for IE5+
+          document.onmousedown = norightclick; // for all others
+              }
+      </script> 
+
+    <style>
+    .mainDiv{ width:550px; height:auto;!important min-height:232px; height:232px; background:url( ) no-repeat center top;margin:100px auto;}
+    </style>
+    
+    <script>
+        /*
+    * 获取Url查询参数 公共方法
+    */
+     function  getParams(name, href) {
+         var href = href || window.location.href,
+           value = '';
+ 
+         if (name) {
+           var reg = new RegExp(name + '=([^&]*)', 'g');
+           href.replace(reg, function($0, $1) {
+             value = decodeURI($1);
+           });
+         } else {
+           value = {};
+           var reg = /\b(\w+)=([^\/&]*)/g;
+           href.replace(reg, function($0, $1, $2) {
+             value[$1] = decodeURI($2);
+           });
+         }
+         return value;
+       };
+     </script>
+
+    <script>
+    //检验是否登录
+    function down(url){
+      var DOI =  getParams("doi");
+      window.open(url+"/"+DOI);    
+    }
+
+    </script>
+
+  </head>
+  
+	<body style=" left:30%">
+		<!--<td><p12><marquee behavior="alternate"><marqueewidth="150"direction=right>温馨提示：请不要多个ip同时登录！</marquee></p12>	</td>-->
+        <td style="text-align:center;vertical-align:middle"></td>
+        <div class="mainDiv"> <table align="center" style="width:400px; padding-top:10px;"></table>
+            <tr>
+                <!-- <td><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>在输入框输入文章的DOI！</b></div> -->
+              <br>  
+              <br> 
+             
+              <form class="search-form" method="get" action="scidown.html" >
+                <input type="hidden" name="url"  value="sci-hub.html  ">
+                <input type="text" name="doi" id="subs_email" placeholder="请输入文章的DOI，如：10.1016/j.carbon.2007.02.034" 
+                style="font-size:15px; width:380px;height:40px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" class="form-btn" style="font-size:19px;color: red; background: rgb(176, 220, 233); border:none solid rgb(235, 13, 13) ; width:80px;height:40px" >下载</button>
+              </form>
+
+        </td></td>
+      </tr>
+        </div>
+    </td>
+    
+
+    
+	</body>
+</html>
+	 

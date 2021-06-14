@@ -1,0 +1,308 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>英文数据库</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />	
+<link type="text/css" href="./css/style.css" rel="stylesheet" />
+<link type="text/css" href="./css/plan.css" rel="stylesheet" />
+<script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./js/jquery.cookie.js"></script>
+<script type="text/javascript" src="./test/js/common.js?ver=1.1"></script>
+<script type="text/javascript" src="./js/jiaodat.js"></script>
+
+<!-- <script type="text/javascript">
+// skin demo
+(function() {
+	var _skin,_lhgcore;
+	var _search=window.location.search;
+	if(_search) {
+		_skin=_search.split('demoSkin=')[0];
+	};
+
+	document.write('<scr'+'ipt src="/Js/lhgdialog.min.js?skin=idialog"></sc'+'ript>');
+	window._isDemoSkin=_skin;
+})();
+</script> -->
+
+<!-- //在网页标题左侧显示图标 -->
+<link rel="icon" href="./images/logotitle.ico" type="image/x-icon">  
+<!-- //在收藏夹显示图标 -->
+<link rel="shortcut icon" href="./images/logotitle.ico" type="image/x-icon"> 
+
+<script>login();</script>
+
+</head>
+
+
+<body>
+
+<div id="dg" style="z-index: 9999; position: fixed ! important; left: 0px; bottom: 91px;">
+ 
+	<a style="font-size:15px; color:#0a0a0a; background: rgba(249, 250, 250, 0.377); border:none solid rgb(235, 13, 13) ; width:950px;height:30px">微信扫码反馈</a>
+	<!-- <input type="button" value="微信扫码反馈" style="font-size:14px; color:#0a0a0a; background: rgba(213, 238, 238, 0.377); border:none solid rgb(235, 13, 13) ; width:90px;height:30px" 
+	onclick='' target="_blank" > -->
+
+</div>
+
+<div style="width:80px;height:80px; z-index: 9999; position: fixed ! important; left: 0px; bottom: 11px;">
+	<img style="" src="https://paperdo.club/Feedback.png"></img>
+</div>
+
+<div id="append_parent"></div>
+<div class="warp">
+
+<!-- <div id="updat">	
+<marquee behavior=slide ><font color='blue'>6.5更新：【1】修复知网不能登录故障！【2】修复IEEE不能使用故障 【3】其他bug </font></marquee>
+</div> -->
+
+
+
+<div class="top"> 
+<div class="logo"><a title="paperdo"><img src="./images/paperdo2.png" alt="logo" /></a></div> 
+<!-- <div class="fr"></div>
+<div class="fr"></div> -->
+<!-- <div  id="updat"color:rgb(108, 172, 245)">6.5更新：【1】修复知网不能登录故障！【2】修复IEEE不能使用故障 【3】其他bug</div> -->
+<script language="javascript">
+function changeColor(){
+var color="#f00|#0f0|#00f|#880|#808|#088|green|blue";
+color=color.split("|");
+document.getElementById("blink").style.color=color[parseInt(Math.random()*color.length)];
+}
+setInterval("changeColor()",500);
+</script>
+<script>
+	function codefans(){
+	var box=document.getElementById("updat");
+	box.style.display="none"; 
+	}
+	setTimeout("codefans()",10000);//2秒，可bai以改动
+</script>
+
+<div class="fl nav">
+<a href=""><b>首页</b></a>
+<!--a href="/notice/">公告</a>
+<a href="/e/dongpo/tuiguang/myfen.php"><b>免费赚时长</b></a-->
+<a href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.665f1debB7qxEH&ft=t&id=615439625889"><b>淘宝购买VIP</b></a>
+<a href="http://wpa.qq.com/msgrd?v=3&uin=278133586&site=qq&menu=yes"><b>论文代写降重</b></a>
+<a href="https://item.taobao.com/item.htm?id=619921617300"><b>论文查重软件</b></a>
+<a href="./datalist.html"><b>各类生活办公软件</b></a>
+
+</div></div>
+<hr>
+ <div class="main">
+ <div class="zone" ><script src=/d/js/acmsd/thea1.js></script></div>
+    <div id="leftcolumn">
+      <div class="module-coursemenu icon">
+        <h3>数据库</h4>
+        <ul class="menu" id="faqmenu">
+
+			<script type="text/javascript">
+				function gotopage(pageurl){
+				  var id =  getParams("id");
+				  if(pageurl == "zw")
+					  window.location.href ="zhongwen.html?id="+id;
+				  else if(pageurl == "yx")
+					  window.location.href ="yixue.html?id="+id;
+				  else if(pageurl == "tsg")
+					  window.location.href ="tushuguan.html?id="+id;
+				}
+			   </script>
+  
+  			  <li ><a href="javascript:gotopage('zw')" style="font-size: 18px;"><span>中文数据库</span></a></li>
+
+			  <li class="active"><a style="font-size: 18px;"><span>英文数据库</span></a></li>
+			  
+			  <li ><a href="javascript:gotopage('yx')" style="font-size: 18px;"><span>医学数据库</span></a></li>
+  
+			  <!-- <li ><a href="javascript:gotopage('tsg')" style="font-size: 18px;"><span>综合数据库</span></a></li> -->
+   
+ 
+        </ul>
+      </div>
+    </div>
+    <div id="maincolumn">
+<div id="broadcast">
+<div class="broadcast">
+<p><span style="color: rgb(226, 17, 17); margin: 0px; padding: 0px; list-style-type: none; font-family: 微软雅黑; font-size: 16px;">
+	<strong>使用说明：</strong></span><br>
+	<span style="color: rgb(51, 51, 51); margin: 0px; padding: 0px; list-style-type: none; font-family: 微软雅黑; font-size: 14px;">
+	1. 请先阅读<strong>外文使用攻略</strong>，再进行外文下载！</strong></span>
+	<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体; font-size: 13.3333px;">&nbsp;
+	</span>
+</p>
+<p><span style="color: rgb(51, 51, 51); margin: 0px; padding: 0px; list-style-type: none; font-family: 微软雅黑; font-size: 14px;">
+	2. 外文网站可能反应较慢，请耐心等待使用！</strong></span>
+	<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体; font-size: 13.3333px;">&nbsp;
+	</span>
+</p>
+<p><span style="color: rgb(51, 51, 51); margin: 0px; padding: 0px; list-style-type: none; font-family: 微软雅黑; font-size: 14px;">
+	3. WOS(SCI)数据库有多个入口，<strong>一个入口不能访问或下载，请更换下一个入口访问。</strong></span>
+	<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体; font-size: 13.3333px;">&nbsp;
+	</span>
+</p>
+<p><span style="color: rgb(51, 51, 51); margin: 0px; padding: 0px; list-style-type: none; font-family: 微软雅黑; font-size: 14px;">
+	4. WOS下载不了的，请在<strong>通用下载</strong>中下载！</strong></span>
+	<span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif, 新宋体; font-size: 13.3333px;">&nbsp;
+	</span>
+</p>
+</div>
+</div>
+
+<div class="new-rec-box"  >
+<div class="sub-mark"><span class="mark h4 imp">通用数据库</span></div>
+<div class="new-rec-soft new tool-links"> 
+
+<span onclick='getpsw("googlescholar")'> <a  style="font-size: 16px;">谷歌学术</a></span> 
+<span onclick='getpsw("serch.html")'> <a  style="font-size: 16px;">通用搜索</a></span> 
+<span onclick='getpsw("sci-hub.html")'> <a  style="font-size: 16px;">通用下载</a></span> 
+<span onclick='getpsw("https://b-ok.org/")'> <a  style="font-size: 16px;">电子书</a></span> 
+
+<span onclick='getpsw("ieee.html")'> <a style="font-size: 16px;">IEEE</a></span> 
+<span onclick='getpsw("EBSCO.html")'> <a style="font-size: 16px;">EBSCO</a></span> 
+<span onclick='getpsw("https://www.cnblogs.com/longlonger/p/12368422.html")'> <a style="color: rgb(193, 33, 33);font-size: 16px;background-color: rgb(217, 242, 250);">外文下载攻略</a></span> 
+
+</div>
+</div>
+     <div class="new-rec-box"  >
+<div class="sub-mark"><span class="mark h4 imp">WOS(SCI)</span></div>
+<div class="new-rec-soft new tool-links"> 
+	<form target=" " name="wos1" method="post" action="http://202.199.103.219/login"  onsubmit="login()" >
+        <input type="hidden" name="url"  value="http://202.199.103.219/go?id=WOS">
+        <input type="hidden" name="mac">
+        <input type="hidden" name="userId" value="" class="textbox">
+		<input type="hidden" name="password" value="" class="textbox">
+        <input type="submit" value="WOS1" style="font-size:16px;background:  rgba(241, 243, 243, 0); border:1px solid transparent; width:180px;height:40px" >
+	</form>
+	
+	  <form target="_blank" style="margin-left: 15px;" name="wo2" method="post" action="http://202.199.103.219/login"  onsubmit="login()" >
+        <input type="hidden" name="url"  value="http://202.199.103.219/go?id=WOS">
+        <input type="hidden" name="mac">
+        <input type="hidden" name="userId" value="" class="textbox">
+        <input type="hidden" name="password" value="" class="textbox">
+        <input type="submit" value="WOS2"style="font-size:16px;background:  rgba(241, 243, 243, 0); border:1px solid transparent; width:180px;height:40px">
+	  </form>
+	  
+	  <form target="_blank" style="margin-left: 15px;" name="wos3" method="post" action="http://202.199.103.219/login"  onsubmit="login()" >
+        <input type="hidden" name="url"  value="http://202.199.103.219/go?id=WOS">
+        <input type="hidden" name="mac">
+        <input type="hidden" name="userId" value="" class="textbox">
+        <input type="hidden" name="password" value="" class="textbox">
+        <input type="submit" value="WOS3" style="font-size:16px;background:  rgba(241, 243, 243, 0); border:1px solid transparent; width:180px;height:40px" >
+	  </form>
+
+	  
+	  <form target="_blank" style="margin-left: 15px;" name="wos4" method="post" action="http://202.199.103.219/login"  onsubmit="login()" >
+        <input type="hidden" name="url"  value="http://202.199.103.219/go?id=WOS">
+        <input type="hidden" name="mac">
+        <input type="hidden" name="userId" value="" class="textbox">
+        <input type="hidden" name="password" value="" class="textbox">
+        <input type="submit" value="WOS4" style="font-size:16px;background:  rgba(241, 243, 243, 0); border:1px solid transparent; width:180px;height:40px" >
+	  </form>
+
+	  <br>
+	  <br>
+	  <form target="_blank" style="margin-left: 15px;" name="wos5" method="post" action="http://202.199.103.219/login"  onsubmit="login()" >
+        <input type="hidden" name="url"  value="http://202.199.103.219/go?id=WOS">
+        <input type="hidden" name="mac">
+        <input type="hidden" name="userId" value=" class="textbox">
+        <input type="hidden" name="password" value="" class="textbox">
+        <input type="submit" value="WOS5" style="font-size:16px;background:  rgba(241, 243, 243, 0); border:1px solid transparent; width:180px;height:40px">
+	  </form>
+
+	  <form target="_blank" style="margin-left: 15px;" name="wos6" method="post" action="http://202.199.103.219/login"  onsubmit="login()" >
+        <input type="hidden" name="url"  value="http://202.199.103.219/go?id=WOS">
+        <input type="hidden" name="mac">
+        <input type="hidden" name="userId" value="" class="textbox">
+        <input type="hidden" name="password" value="" class="textbox">
+        <input type="submit" value="WOS6" style="font-size:16px;background:  rgba(241, 243, 243, 0); border:1px solid transparent; width:180px;height:40px" >
+	  </form>
+	  
+	  <form target="_blank" style="margin-left: 15px;" name="wos7" method="post" action="http://202.199.103.219/login"  onsubmit="login()" >
+        <input type="hidden" name="url"  value="http://202.199.103.219/go?id=WOS">
+        <input type="hidden" name="mac">
+        <input type="hidden" name="userId" value="" class="textbox">
+        <input type="hidden" name="password" value="" class="textbox">
+        <input type="submit" value="WOS7" style="font-size:16px;background:  rgba(241, 243, 243, 0); border:1px solid transparent; width:180px;height:40px" >
+	  </form>
+
+	  <form target="_blank" style="margin-left: 15px;" name="wos8" method="post" action="http://202.199.103.219/login"  onsubmit="login()" >
+        <input type="hidden" name="url"  value="http://202.199.103.219/go?id=WOS">
+        <input type="hidden" name="mac">
+        <input type="hidden" name="userId" value="" class="textbox">
+        <input type="hidden" name="password" value="" class="textbox">
+        <input type="submit" value="WOS8" style="font-size:16px;background:  rgba(241, 243, 243, 0); border:1px solid transparent; width:180px;height:40px" >
+	  </form>
+	
+</div>
+</div>
+
+</div>
+<div class="clearbox"></div>
+</div>
+</div>
+
+
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+/* pop */
+#pop{background:#fff;width:260px;border:1px solid #e0e0e0;font-size:12px;position:fixed;right:10px;bottom:10px;}
+#popHead{line-height:32px;background:#f6f0f3;border-bottom:1px solid #e0e0e0;position:relative;font-size:12px;padding:0 0 0 10px;}
+#popHead h2{font-size:14px;color:#666;line-height:32px;height:32px;}
+#popHead #popClose{position:absolute;right:10px;top:1px;}
+#popHead a#popClose:hover{color:#f00;cursor:pointer;}
+#popContent{padding:5px 10px;}
+#popTitle a{line-height:24px;font-size:14px;font-family:'微软雅黑';color:#333;font-weight:bold;text-decoration:none;}
+#popTitle a:hover{color:#f60;}
+#popIntro{text-indent:24px;line-height:160%;margin:5px 0;color:#666;}
+#popMore{text-align:right;border-top:1px dotted #ccc;line-height:24px;margin:8px 0 0 0;}
+#popMore a{color:#f60;}
+#popMore a:hover{color:#f00;}
+</style>
+
+
+<!--微信start-->
+<div id="pop" style="display:none;">
+
+	<div id="popHead"> <a id="popClose" title="关闭">关闭</a>
+		<h2>学术猫微信公众号</h2>
+	</div>
+	<div id="popContent">
+		<dl>
+			<dt id="popTitle"><a href="http://www.2447.net/" target="_blank">学术猫</a></dt>
+			<dd id="popIntro"><img src="/images/Feedback.png"  width="200" height="200" align="center"><br>扫码邀请好友免费赢学术猫钻石会员啦，免费使用高权图书馆等全站资源,直连世界top100名校图书馆！</dd>
+		</dl>
+		<!--p id="popMore"><a href="http://www.2447.net/" target="_blank">查看 »</a></p-->
+	</div>
+	
+</div>
+
+<!---微信end-->
+
+<div class="footer">
+ <!-- <p>
+            <a>关于我们</a>  |  
+            <a>联系我们</a>  |  
+            <a>网站地图</a>  |   
+	    <!--a href="#" target='_blank'>代理加盟</a>  |-->   
+<!-- 	   
+        </p>
+
+	<p>©2016 论文下载网 www.2447.net 版权所有</p>
+	<p>PubMed、IEEE、Reaxys、Ovid、Sci&Finder、ScienceDirect、Springer、Wiley、EI、CSMA、ACS等中外文文献数据库，无限下载。</p> --> -->
+
+	<p><a style="font-size: 16px;">声明</a></p>
+	<p>以上分享的数据库只是作为个人学术研究，旨在帮助个人毕业论文或科研，请勿恶意传播或下载！<br> 
+  任何经由以上数据库下载入口获得的任何资料，其版权均归原机构或个人所有，不得用于个人学术交流外的任何领域。 <br> 
+  如使用者违反版权法相关规定，所产生的法律责任由使用者承担。
+  任何单位或个人认为通过以上数据库可能涉嫌侵犯其信息网络传播权，应该及时提出，维护版权拥有者的权利。<br> 
+  联系邮箱：paperdo@qq.com </p>
+		
+</body>
+</html>
